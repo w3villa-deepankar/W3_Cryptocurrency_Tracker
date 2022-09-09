@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scribble.variable" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="B0g-oH-qnf">
+                                <rect key="frame" x="0.0" y="-0.5" width="414" height="895.5"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ms-DX-AD5">
+                                <rect key="frame" x="0.0" y="503" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openCryptoTrackerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="czH-gg-jkh">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="nwt-58-njM"/>
+                                    <constraint firstAttribute="height" constant="100" id="qrN-FL-mSp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinGecko API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RD7-KW-sam">
+                                <rect key="frame" x="0.0" y="523.5" width="414" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp; Charts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-St-KB1">
+                                <rect key="frame" x="0.0" y="547.5" width="414" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B0g-oH-qnf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1Ui-BK-Fas"/>
+                            <constraint firstAttribute="bottom" secondItem="B0g-oH-qnf" secondAttribute="bottom" id="44z-qf-7Df"/>
+                            <constraint firstItem="czH-gg-jkh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GQR-lh-kIz"/>
+                            <constraint firstItem="RD7-KW-sam" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kdk-Ut-ki8"/>
+                            <constraint firstItem="P5Y-St-KB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P0K-ZO-Doa"/>
+                            <constraint firstAttribute="trailing" secondItem="B0g-oH-qnf" secondAttribute="trailing" id="SPN-fU-KIf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RD7-KW-sam" secondAttribute="trailing" id="TD7-3y-wxi"/>
+                            <constraint firstItem="P5Y-St-KB1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bX4-vE-YEB"/>
+                            <constraint firstItem="czH-gg-jkh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dLq-l0-uzj"/>
+                            <constraint firstItem="B0g-oH-qnf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="k94-jb-2zN"/>
+                            <constraint firstItem="0Ms-DX-AD5" firstAttribute="top" secondItem="czH-gg-jkh" secondAttribute="bottom" constant="5" id="qES-On-HFQ"/>
+                            <constraint firstItem="P5Y-St-KB1" firstAttribute="top" secondItem="RD7-KW-sam" secondAttribute="bottom" id="vZA-8O-ZVL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ms-DX-AD5" secondAttribute="trailing" id="xyf-Cj-aCo"/>
+                            <constraint firstItem="0Ms-DX-AD5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zRe-Dk-xop"/>
+                            <constraint firstItem="RD7-KW-sam" firstAttribute="top" secondItem="0Ms-DX-AD5" secondAttribute="bottom" id="zhE-5I-C2K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="openCryptoTrackerIcon" width="360" height="360"/>
+        <image name="scribble.variable" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
